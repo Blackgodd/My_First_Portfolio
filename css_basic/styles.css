@@ -65,3 +65,21 @@ header, footer {
     text-align: center;
     padding: 10px;
 }
+
+/* Responsive Styles for Smartphones */
+@media (max-width: 768px) {
+    /* Stack main's children vertically */
+    main {
+        flex-direction: column;  /* Change to column layout for narrow screens */
+    }
+
+    /* Adjust the margin for article and aside */
+    article, aside {
+        margin: 10px 0;           /* Remove side margins */
+    }
+
+    /* Additional styles to make content look better on mobile */
+    header, footer {
+        padding: 15px;
+    }
+}
